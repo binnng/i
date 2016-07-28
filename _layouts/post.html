@@ -23,7 +23,7 @@ post_class: post-template
 
         <section class="post-content">
             {% if page.image %}
-            <p><img src="http://binnng.github.io/i/assets/images/{{ page.image }}.jpg" alt="{{ page.image }}" class="full-img"></p>
+            <p><img src="{{ site.baseurl }}assets/images/{{ page.image }}.jpg" alt="{{ page.image }}" class="full-img"></p>
             {% endif %}
             {{content}}
         </section>
@@ -43,7 +43,7 @@ post_class: post-template
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(/i/assets/images/profile.png)">
+                    <a class="img" href="{{ site.baseurl }}" style="background-image: url({{ site.baseurl }}assets/images/profile.png)">
                     <span class="hidden">{{site.author}}'s Picture</span></a>
                 </figure>
                 <section class="author">
