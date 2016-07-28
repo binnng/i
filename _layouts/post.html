@@ -23,7 +23,7 @@ post_class: post-template
 
         <section class="post-content">
             {% if page.image %}
-            <p><img src="{{ site.baseurl }}/assets/images/{{ page.image }}.jpg" alt="{{ page.image }}" class="full-img"></p>
+            <p><img src="{{ site.baseurl }}/assets/images/{{ page.image | replace: '.jpg', '' }}.jpg" alt="{{ page.image }}" class="full-img"></p>
             {% endif %}
             {{content}}
         </section>
