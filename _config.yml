@@ -3,10 +3,10 @@ highlighter: pygments
 logo: false                                                                                                                                           c-14
 paginate: 20
 baseurl: ""
-domain_name: 'http://binnng.github.io/i/'
-baseurl: "/" # the subpath of your site, e.g. /blog/
+domain_name: 'http://binnng.github.io'
+baseurl: "/i/" # the subpath of your site, e.g. /blog/
 # Details for the RSS feed generator
-url: "http://binnng.github.io/i/" # the base hostname & protocol for your site
+url: "http://binnng.github.io" # the base hostname & protocol for your site
 author:         'binnng'
 name:          '老婆婆的远大梦想'
 exclude: ['vendor', 'README.md', 'Gemfile', 'Gemfile.lock', 'config.ru', 'unicorn.rb', 'Procfile']
