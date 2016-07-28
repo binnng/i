@@ -1,11 +1,11 @@
 ---
 layout: post
+image: ifttt.jpg
 title:  "If This Then That"
 date:   2011-07-05 09:00:00
 categories: SMUDGE
 ---
 
-<img src="http://binnng.coding.io/assets/images/ifttt.jpg"/>
 
 感觉一夜之间，“ifttt”（If This than that）在网上流行起来，不管是微博，轻博客，还是知乎上面，关于ifttt的消息不计其数，并且短短的时间内，国内就出现了山寨版“如果云”，“如果就”等，可想而知，“ifttt”当今的火爆程度，可以与Google+并驾齐驱了。
 
