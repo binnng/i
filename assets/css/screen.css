@@ -478,7 +478,7 @@ margin on the iframe, cause it breaks stuff. */
     background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
-    background: url(http://ww2.sinaimg.cn/large/473fa942gw1dm76v5sf0lj.jpg) repeat-x center center;
+    background: url(/i/assets/css/473fa942gw1dm76v5sf0lj.jpg) repeat-x center center;
     height:10px !important;
     min-height:0 !important;
     padding:0 !important;
@@ -859,7 +859,7 @@ body:not(.post-template) .post-title {
     padding-bottom: 6rem;
     margin-bottom: 2rem;
     text-align: center;
-    background: url(/assets/css/smg_motto.png) no-repeat center center;
+    background: url(/i/assets/css/smg_motto.png) no-repeat center center;
 }
 
 
