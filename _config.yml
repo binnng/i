@@ -1,9 +1,9 @@
 markdown: redcarpet
 highlighter: pygments
-logo: false                                                                                                                                           c-14
+logo: false
 paginate: 20
 domain_name: 'http://binnng.github.io'
-baseurl: "/i/" # the subpath of your site, e.g. /blog/
+baseurl: "/i" # the subpath of your site, e.g. /blog/
 # Details for the RSS feed generator
 url: "http://binnng.github.io/i/" # the base hostname & protocol for your site
 author:         'binnng'
