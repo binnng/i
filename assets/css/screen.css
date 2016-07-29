@@ -1330,16 +1330,19 @@ body:not(.post-template) .post-title {
     color: #50585D;
 }
 
-.poweredby {
+.poweredby,
+.copyright {
     display: block;
     width: 45%;
+    color: #999;
+}
+
+.poweredby {
     float: right;
     text-align: right;
 }
 
 .copyright {
-    display: block;
-    width: 45%;
     float: left;
 }
 
@@ -1474,8 +1477,15 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 500px) {
 
+    .copyright,
+    .poweredby{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
     .motto {
-        background-size: 100%;
+        background-size: 100% !important;
     }
 
     .main-header {
@@ -1652,11 +1662,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-content .full-img {
-        width: auto;
-        width: calc(100% + 32px); /* expand with to image + margins */
-        margin: 0 -16px; /* get rid of margins */
-        min-width: 0;
-        max-width: 112%; /* fallback when calc doesn't work */
+        width: 100%;
     }
 
     .post-meta {
@@ -1706,6 +1712,7 @@ body:not(.post-template) .post-title {
 
     .site-footer {
         margin-top: 3rem;
+        padding-top: 3rem;
     }
 
     .author-profile {
