@@ -7,14 +7,15 @@ postFolder = "../_posts";
 
 getName = function(url) {
   var match;
-  match = url.match(/images\/(.*?)\"\s*\/>/);
+  match = url.match(/images\/(.*?)(.jpg|.png)/);
   return match[1];
 };
 
 instead = function(cnt, match) {
-  var img, newCnt;
+  var img, newCnt, reg;
   img = getName(match);
-  newCnt = cnt.replace(match + "\n", "");
+  reg = new RegExp("[^\\n]*" + match + "[^\\n]*\\n?", "g");
+  newCnt = cnt.replace(reg, "");
   newCnt = newCnt.replace("layout: post", "layout: post\nimage: " + img);
   return newCnt;
 };
@@ -24,7 +25,7 @@ start = function() {
     return files.forEach(function(file, idx) {
       return fs.readFile(postFolder + "/" + file, "utf-8", function(err, cnt) {
         var match;
-        match = cnt.match(/<img src=\"(.*?)\/>/g);
+        match = cnt.match(/images\/(.*?)(.jpg|.png)/g);
         if (match && match[0]) {
           return fs.writeFileSync(postFolder + "/" + file, instead(cnt, match[0]), "utf-8", function() {});
         }
