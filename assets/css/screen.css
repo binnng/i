@@ -723,15 +723,12 @@ margin on the iframe, cause it breaks stuff. */
     margin: 1rem auto;
     word-break: break-word;
     hyphens: auto;
-}
-
-.home-template .post{
     border-bottom: #EBF2F6 1px solid;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
-.home-template .post:after {
+.post:after {
     display: block;
     content: "";
     width: 7px;
@@ -746,6 +743,14 @@ margin on the iframe, cause it breaks stuff. */
     -moz-border-radius: 100%;
     border-radius: 100%;
     box-shadow: #FFF 0 0 0 5px;
+}
+
+.post.post-post{
+    border-bottom: none;
+}
+
+.post.post-post:after {
+    display: none;
 }
 
 body:not(.post-template) .post-title {
